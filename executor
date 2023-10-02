@@ -78,16 +78,16 @@ Close.TextColor3 = Color3.fromRGB(255, 255, 255)
 Close.TextSize = 9.000
 
 
-Close.MouseButton1Down(function())
+Close.MouseButton1Down:Connect(function())
 BrawlStars:Destroy()
 
 end)
 
-Clear.MouseButton1Down(function()
+Clear.MouseButton1Down:Connect(function()
     TextBox = ""
 end)
 
-Execute.MouseButton1Down(function()
+Execute.MouseButton1Down:Connect(function()
   loadstring(TextBox.Text)())
 end)
 
